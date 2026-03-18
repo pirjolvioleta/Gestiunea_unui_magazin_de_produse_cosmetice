@@ -143,7 +143,6 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 🚀 Scop
 
 Această bază de date permite:
 - Gestionarea eficientă a stocurilor 📊  
@@ -153,6 +152,4 @@ Această bază de date permite:
 
 ---
 
-<p align="center">
-  💡 Proiect realizat pentru studiu și practică în baze de date
-</p>
+
