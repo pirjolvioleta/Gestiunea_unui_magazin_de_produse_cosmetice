@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Descriere Generală
+### 📌 Descriere Generală
 
 Această bază de date este proiectată pentru a gestiona eficient activitățile unui magazin de produse cosmetice, incluzând:
 
@@ -22,7 +22,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 🧴 Tabela: PRODUSE
+### 🧴 Tabela: PRODUSE
 
 | Atribut            | Tip de Date        | Descriere                  |
 |--------------------|------------------|---------------------------|
@@ -33,7 +33,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 👨‍💼 Tabela: ANGAJATI
+### 👨‍💼 Tabela: ANGAJATI
 
 | Atribut          | Tip de Date        | Descriere                  |
 |------------------|------------------|---------------------------|
@@ -49,7 +49,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 👥 Tabela: CLIENTI
+### 👥 Tabela: CLIENTI
 
 | Atribut          | Tip de Date   | Descriere            |
 |------------------|--------------|---------------------|
@@ -63,7 +63,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 📦 Tabela: COMENZI
+### 📦 Tabela: COMENZI
 
 | Atribut        | Tip de Date   | Descriere                |
 |----------------|--------------|-------------------------|
@@ -76,7 +76,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 🏬 Tabela: DEPOZIT
+### 🏬 Tabela: DEPOZIT
 
 | Atribut        | Tip de Date   | Descriere                |
 |----------------|--------------|-------------------------|
@@ -87,7 +87,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 🧾 Tabela: DETALII_COMENZI
+### 🧾 Tabela: DETALII_COMENZI
 
 | Atribut     | Tip de Date   | Descriere        |
 |-------------|--------------|------------------|
@@ -98,7 +98,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 📄 Tabela: FACTURI
+### 📄 Tabela: FACTURI
 
 | Atribut        | Tip de Date   | Descriere      |
 |----------------|--------------|---------------|
@@ -108,7 +108,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 🧑‍💼 Tabela: FUNCTII
+### 🧑‍💼 Tabela: FUNCTII
 
 | Atribut         | Tip de Date   | Descriere          |
 |-----------------|--------------|-------------------|
@@ -119,7 +119,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 🚚 Tabela: FURNIZORI
+### 🚚 Tabela: FURNIZORI
 
 | Atribut              | Tip de Date   | Descriere        |
 |----------------------|--------------|------------------|
@@ -130,7 +130,7 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 ---
 
-## 🔗 Relații între tabele
+### 🔗 Relații între tabele
 
 - CLIENTI → COMENZI (1:N)
 - ANGAJATI → COMENZI (1:N)
