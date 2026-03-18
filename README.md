@@ -1,24 +1,24 @@
-# Gestiunea-unui-magazin-de-produse-cosmetice
- <h1 align="center">💄 Bază de Date – Magazin Produse Cosmetice</h1>
+# Gestiunea unui magazin de produse cosmetice
+ <h1 align="center">Magazin Produse Cosmetice 💄</h1>
 
 <p align="center">
-  Sistem pentru gestionarea unui magazin de produse cosmetice 🛍️  
-  Include administrarea produselor, clienților, comenzilor și stocurilor.
+  Sistem pentru gestionarea unui magazin de produse cosmetice 🛍️   
+  Include administrarea produselor, clientilor, comenzilor si stocurilor. 
 </p>
 
 ---
 
 ### 📌 Descriere Generală
 
-Această bază de date este proiectată pentru a gestiona eficient activitățile unui magazin de produse cosmetice, incluzând:
+Baza de date este proiectata pentru a gestiona activitatile unui magazin de produse cosmetice, incluzand:
 
 - 🧴 Produse
-- 👥 Clienți
-- 👨‍💼 Angajați
+- 👥 Clienti
+- 👨‍💼 Angajati
 - 🚚 Furnizori
 - 📦 Comenzi
 - 📄 Facturi
-- 🏬 Depozit (stocuri)
+- 🏬 Depozit
 
 ---
 
@@ -26,10 +26,10 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 
 | Atribut            | Tip de Date        | Descriere                  |
 |--------------------|------------------|---------------------------|
-| id_produs          | Numeric (PK)     | Identificator unic produs |
-| denumire_produs    | VARCHAR(40)      | Numele produsului         |
-| descriere_produs   | VARCHAR(100)     | Descriere produs          |
-| data_expirarii     | DATE             | Data expirării            |
+| id_produs          | numeric          | cheie primara |
+| denumire_produs    | VARCHAR(40)      | numele produsului         |
+| descriere_produs   | VARCHAR(100)     | descriere produs          |
+| data_expirarii     | DATE             | data expirării            |
 
 ---
 
@@ -38,13 +38,13 @@ Această bază de date este proiectată pentru a gestiona eficient activitățil
 | Atribut          | Tip de Date        | Descriere                  |
 |------------------|------------------|---------------------------|
 | id_angajat       | Numeric (PK)     | ID angajat                |
-| nume_angajat     | VARCHAR(40)      | Nume                      |
-| prenume_angajat  | VARCHAR(40)      | Prenume                   |
-| adresa           | VARCHAR(100)     | Adresă                    |
-| telefon          | Numeric(12)      | Telefon                   |
-| data_angajarii   | DATE             | Data angajării            |
-| salariul         | Numeric(4)       | Salariu                   |
-| id_functie       | Numeric (FK)     | Legătură cu FUNCTII       |
+| nume_angajat     | VARCHAR(40)      | nume                      |
+| prenume_angajat  | VARCHAR(40)      | prenume                   |
+| adresa           | VARCHAR(100)     | adresă                    |
+| telefon          | Numeric(12)      | telefon                   |
+| data_angajarii   | DATE             | data angajării            |
+| salariul         | Numeric(4)       | salariu                   |
+| id_functie       | Numeric (FK)     | legătură cu FUNCTII       |
 | comision         | Numeric          | Comision                  |
 
 ---
