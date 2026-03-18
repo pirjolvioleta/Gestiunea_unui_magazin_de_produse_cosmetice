@@ -1,8 +1,4 @@
-<h1 align="center">💄 Bază de Date – Magazin Produse Cosmetice</h1>
-
-<p align="center">
-  <i>Proiect de proiectare și organizare a unei baze de date relaționale</i>
-</p>
+<h1 align="center">💄 Magazin Produse Cosmetice</h1>
 
 ---
 
