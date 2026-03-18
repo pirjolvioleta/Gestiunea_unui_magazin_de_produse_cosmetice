@@ -24,7 +24,7 @@ Baza de date este proiectata pentru a gestiona activitatile unui magazin de prod
 
 ### 🧴 Tabela: PRODUSE
 
-| Atribut            | Tip de Date        | Descriere                  |
+| Atribut | Tip de Date | Descriere                  |
 |--------------------|------------------|---------------------------|
 | id_produs          | numeric          | cheie primara |
 | denumire_produs    | VARCHAR(40)      | numele produsului         |
