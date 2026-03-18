@@ -114,8 +114,3 @@ Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cos
 * **adresa** *(tip-șir de caractere de lungime 100)*
 * **cantitate** *(tip-numeric)*
 
----
-
-<p align="center">
-  💡 Proiect realizat în scop educațional – Baze de Date
-</p>
