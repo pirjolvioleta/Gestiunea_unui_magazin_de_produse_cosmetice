@@ -1,11 +1,158 @@
 # Gestiunea-unui-magazin-de-produse-cosmetice
-  Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cosmetice, care include informații despre produse, clienți, angajați, furnizori, comenzi, detalii ale comenzilor, facturi, funcții și date despre stocul disponibil din depozit.
-  Tabela PRODUSE are ca atribute: id_produs (cheie primară, tip-numeric), denumire_produs (tip-șir de caractere de lungime 40), descriere_produs (tip-șir de caractere de lungime 100), data_expirarii (tip-dată calendaristică).
-  Tabela ANGAJATI are ca atribute: id_angajat (cheie primară, tip-numeric), nume_angajat (tip-șir de caractere de lungime 40), prenume_angajat (tip-șir de caractere de lungime 40), adresa (tip-șir de caractere de lungime 100), telefon (tip-numeric de lungime 12), data_angajarii (tip-dată calendaristică), salariul (tip-numeric de lungime 4), id_functie (cheie externă care face legatura cu tabela FUNCTII, tip-numeric), comision (tip-numeric).
-  Tabela CLIENTI are ca atribute: id_client (cheie primară, tip-numeric), nume_client (tip-șir de caractere de lungime 40), prenume_client (tip-șir de caractere de lungime 30), data_nasterii (tip-dată calendaristică), telefon (tip-numeric), adresa (tip-șir de caractere de lungime 100), email (tip-șir de caractere de lungime 30).
-  Tabela COMENZI are ca atribute: id_comanda (cheie primară, tip-numeric), id_client (cheie externă care face legatura cu tabela CLIENTI, tip-numeric), data_comanda (tip-dată calendaristică), id_angajat (cheie externă care face legatura cu tabela ANGAJATI, tip-numeric), metoda_plata (tip-șir de caractere de lungime 20), stare_comanda (tip-șir de caractere de lungime 20).
-  Tabela DEPOZIT are ca atribute: numar_depozit (cheie primară, tip-numeric), id_produs (cheie externă care face legatura cu tabela PRODUSE, tip-numeric), id_furnizor (cheie externă care face legatura cu tabela FURNIZORI, tip-numeric), cantitate (tip-numeric).
-  Tabela DETALII_COMENZI are ca atribute: id_produs (cheie externă care face legatura cu tabela PRODUSE, tip-numeric), id_comanda (cheie externă care face legatura cu tabela COMENZI, tip-numeric), pret (tip-numeric), cantitate (tip-numeric).
-  Tabela FACTURI are ca atribute: numar_factura (cheie primară, tip-numeric), data_factura (tip-dată calendaristică), id_furnizor (cheie externă care face legatura cu tabela FURNIZORI, tip-numeric).
-  Tabela FUNCTII are ca atribute: id_functie (cheie primară, tip-numeric), den_functie (tip-șir de caractere de lungime 40), salariul_minim (tip-numeric), salariul_maxim (tip-numeric).
-  Tabela FURNIZORI are ca atribute: id_furnizor (cheie primară, tip-numeric), denumire_furnizor (tip-șir de caractere de lungime 100), adresa (tip-șir de caractere de lungime 100), cantitate (tip-numeric).
+ <h1 align="center">💄 Bază de Date – Magazin Produse Cosmetice</h1>
+
+<p align="center">
+  Sistem pentru gestionarea unui magazin de produse cosmetice 🛍️  
+  Include administrarea produselor, clienților, comenzilor și stocurilor.
+</p>
+
+---
+
+## 📌 Descriere Generală
+
+Această bază de date este proiectată pentru a gestiona eficient activitățile unui magazin de produse cosmetice, incluzând:
+
+- 🧴 Produse
+- 👥 Clienți
+- 👨‍💼 Angajați
+- 🚚 Furnizori
+- 📦 Comenzi
+- 📄 Facturi
+- 🏬 Depozit (stocuri)
+
+---
+
+## 🧴 Tabela: PRODUSE
+
+| Atribut            | Tip de Date        | Descriere                  |
+|--------------------|------------------|---------------------------|
+| id_produs          | Numeric (PK)     | Identificator unic produs |
+| denumire_produs    | VARCHAR(40)      | Numele produsului         |
+| descriere_produs   | VARCHAR(100)     | Descriere produs          |
+| data_expirarii     | DATE             | Data expirării            |
+
+---
+
+## 👨‍💼 Tabela: ANGAJATI
+
+| Atribut          | Tip de Date        | Descriere                  |
+|------------------|------------------|---------------------------|
+| id_angajat       | Numeric (PK)     | ID angajat                |
+| nume_angajat     | VARCHAR(40)      | Nume                      |
+| prenume_angajat  | VARCHAR(40)      | Prenume                   |
+| adresa           | VARCHAR(100)     | Adresă                    |
+| telefon          | Numeric(12)      | Telefon                   |
+| data_angajarii   | DATE             | Data angajării            |
+| salariul         | Numeric(4)       | Salariu                   |
+| id_functie       | Numeric (FK)     | Legătură cu FUNCTII       |
+| comision         | Numeric          | Comision                  |
+
+---
+
+## 👥 Tabela: CLIENTI
+
+| Atribut          | Tip de Date   | Descriere            |
+|------------------|--------------|---------------------|
+| id_client        | Numeric (PK) | ID client           |
+| nume_client      | VARCHAR(40)  | Nume                |
+| prenume_client   | VARCHAR(30)  | Prenume             |
+| data_nasterii    | DATE         | Data nașterii       |
+| telefon          | Numeric      | Telefon             |
+| adresa           | VARCHAR(100) | Adresă              |
+| email            | VARCHAR(30)  | Email               |
+
+---
+
+## 📦 Tabela: COMENZI
+
+| Atribut        | Tip de Date   | Descriere                |
+|----------------|--------------|-------------------------|
+| id_comanda     | Numeric (PK) | ID comandă              |
+| id_client      | Numeric (FK) | Client                  |
+| data_comanda   | DATE         | Data comenzii           |
+| id_angajat     | Numeric (FK) | Angajat responsabil     |
+| metoda_plata   | VARCHAR(20)  | Metodă plată            |
+| stare_comanda  | VARCHAR(20)  | Status comandă          |
+
+---
+
+## 🏬 Tabela: DEPOZIT
+
+| Atribut        | Tip de Date   | Descriere                |
+|----------------|--------------|-------------------------|
+| numar_depozit  | Numeric (PK) | ID depozit              |
+| id_produs      | Numeric (FK) | Produs                  |
+| id_furnizor    | Numeric (FK) | Furnizor                |
+| cantitate      | Numeric      | Cantitate disponibilă   |
+
+---
+
+## 🧾 Tabela: DETALII_COMENZI
+
+| Atribut     | Tip de Date   | Descriere        |
+|-------------|--------------|------------------|
+| id_produs   | Numeric (FK) | Produs           |
+| id_comanda  | Numeric (FK) | Comandă          |
+| pret        | Numeric      | Preț             |
+| cantitate   | Numeric      | Cantitate        |
+
+---
+
+## 📄 Tabela: FACTURI
+
+| Atribut        | Tip de Date   | Descriere      |
+|----------------|--------------|---------------|
+| numar_factura  | Numeric (PK) | Număr factură |
+| data_factura   | DATE         | Data facturii |
+| id_furnizor    | Numeric (FK) | Furnizor      |
+
+---
+
+## 🧑‍💼 Tabela: FUNCTII
+
+| Atribut         | Tip de Date   | Descriere          |
+|-----------------|--------------|-------------------|
+| id_functie      | Numeric (PK) | ID funcție        |
+| den_functie     | VARCHAR(40)  | Denumire funcție  |
+| salariul_minim  | Numeric      | Salariu minim     |
+| salariul_maxim  | Numeric      | Salariu maxim     |
+
+---
+
+## 🚚 Tabela: FURNIZORI
+
+| Atribut              | Tip de Date   | Descriere        |
+|----------------------|--------------|------------------|
+| id_furnizor          | Numeric (PK) | ID furnizor      |
+| denumire_furnizor    | VARCHAR(100) | Nume furnizor    |
+| adresa               | VARCHAR(100) | Adresă           |
+| cantitate            | Numeric      | Cantitate livrată|
+
+---
+
+## 🔗 Relații între tabele
+
+- CLIENTI → COMENZI (1:N)
+- ANGAJATI → COMENZI (1:N)
+- PRODUSE → DETALII_COMENZI (1:N)
+- COMENZI → DETALII_COMENZI (1:N)
+- PRODUSE → DEPOZIT (1:N)
+- FURNIZORI → DEPOZIT (1:N)
+- FURNIZORI → FACTURI (1:N)
+- FUNCTII → ANGAJATI (1:N)
+
+---
+
+## 🚀 Scop
+
+Această bază de date permite:
+- Gestionarea eficientă a stocurilor 📊  
+- Urmărirea comenzilor 📦  
+- Administrarea relațiilor cu clienții 👥  
+- Evidența angajaților și funcțiilor 👨‍💼  
+
+---
+
+<p align="center">
+  💡 Proiect realizat pentru studiu și practică în baze de date
+</p>
