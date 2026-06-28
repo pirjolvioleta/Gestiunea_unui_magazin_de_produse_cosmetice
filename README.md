@@ -1,14 +1,14 @@
-<h1 align="center">🎀 Magazin Produse Cosmetice 🎀</h1>
+<h1 align="center"> Magazin Produse Cosmetice </h1>
 
 ---
 
-## 📖 Descriere
+## Descriere
 
 Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cosmetice, care include informații despre produse, clienți, angajați, furnizori, comenzi, detalii ale comenzilor, facturi, funcții și date despre stocul disponibil din depozit.
 
 ---
 
-## 🧴 Tabela: PRODUSE
+## Tabela: PRODUSE
 
 > Tabela PRODUSE are ca atribute:
 
@@ -19,7 +19,7 @@ Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cos
 
 ---
 
-## 👨‍💼 Tabela: ANGAJATI
+## Tabela: ANGAJATI
 
 > Tabela ANGAJATI are ca atribute:
 
@@ -35,7 +35,7 @@ Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cos
 
 ---
 
-## 👥 Tabela: CLIENTI
+## Tabela: CLIENTI
 
 > Tabela CLIENTI are ca atribute:
 
@@ -49,7 +49,7 @@ Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cos
 
 ---
 
-## 📦 Tabela: COMENZI
+## Tabela: COMENZI
 
 > Tabela COMENZI are ca atribute:
 
@@ -62,7 +62,7 @@ Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cos
 
 ---
 
-## 🏬 Tabela: DEPOZIT
+## Tabela: DEPOZIT
 
 > Tabela DEPOZIT are ca atribute:
 
@@ -73,7 +73,7 @@ Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cos
 
 ---
 
-## 🧾 Tabela: DETALII_COMENZI
+## Tabela: DETALII_COMENZI
 
 > Tabela DETALII_COMENZI are ca atribute:
 
@@ -84,7 +84,7 @@ Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cos
 
 ---
 
-## 📄 Tabela: FACTURI
+## Tabela: FACTURI
 
 > Tabela FACTURI are ca atribute:
 
@@ -94,7 +94,7 @@ Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cos
 
 ---
 
-## 🧑‍💼 Tabela: FUNCTII
+## Tabela: FUNCTII
 
 > Tabela FUNCTII are ca atribute:
 
@@ -105,7 +105,7 @@ Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cos
 
 ---
 
-## 🚚 Tabela: FURNIZORI
+## Tabela: FURNIZORI
 
 > Tabela FURNIZORI are ca atribute:
 
