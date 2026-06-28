@@ -40,7 +40,7 @@ MODIFY (Adresa VARCHAR2(100));
 prompt
 prompt Creating table proiect_functii
 prompt ======================
-
+prompt
 
 CREATE TABLE proiect_functii(
 Id_functie NUMBER(10) PRIMARY KEY,
