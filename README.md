@@ -4,7 +4,7 @@
 
 ## Descriere
 
-Tema aleasă este gestionarea unei baze de date pentru un magazin cu produse cosmetice, care include informații despre produse, clienți, angajați, furnizori, comenzi, detalii ale comenzilor, facturi, funcții și date despre stocul disponibil din depozit.
+Tema aleasă presupune gestionarea unei baze de date pentru un magazin cu produse cosmetice, care include informații despre produse, clienți, angajați, furnizori, comenzi, detalii ale comenzilor, facturi, funcții și date despre stocul disponibil din depozit.
 
 ---
 
